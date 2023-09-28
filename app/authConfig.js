@@ -6,11 +6,11 @@
 const msalConfig = {
     auth: {
         // 'Application (client) ID' of app registration in Azure portal - this value is a GUID - Is provided by the API Team
-        clientId: "<frontend-client-id>",
+        clientId: "12982bf5-3800-45a4-bddd-d8bc395ad987",
         // Full directory URL, in the form of https://login.microsoftonline.com/<tenant-id>
-        authority: "https://login.microsoftonline.com/<tenant-id>",
+        authority: "https://login.microsoftonline.com/a9d3abc9-3302-4217-8969-726e46809c6d",
         // Full redirect URL, in form of http://localhost:3000 - has to match a redirect URI set up in the App Registration
-        redirectUri: "<redirect-uri>",
+        redirectUri: "http://localhost:3000",
     },
     cache: {
         cacheLocation: "sessionStorage", // This configures where your cache will be stored
@@ -48,7 +48,7 @@ const msalConfig = {
  * https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
  */
 const loginRequest = {
-    scopes: ["<scope>"]
+    scopes: ["api://a020da23-f5b9-443e-9bfa-83228c60a8d3/Roles.Read"]
 };
 
 /**
@@ -56,6 +56,6 @@ const loginRequest = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 const tokenRequest = {
-    scopes: ["<scope>"],
+    scopes: ["api://a020da23-f5b9-443e-9bfa-83228c60a8d3/Roles.Read"],
     forceRefresh: false // Set this to "true" to skip a cached token and go to the server to get a new token
 };
