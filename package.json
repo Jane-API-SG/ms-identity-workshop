@@ -1,0 +1,36 @@
+{
+  "name": "ms-identity-workshop",
+  "version": "1.0.0",
+  "description": "A JavaScript single-page application calling Salling Group API using MSAL.js (w/ AAD v2 endpoint)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/ds-api/api/ms-identity-workshop.git"
+  },
+  "keywords": [
+    "javascript",
+    "msal",
+    "authorization",
+    "code",
+    "authentication",
+    "microsoft",
+    "ms-identity",
+    "azure-ad",
+    "spa",
+    "node.js",
+    "msal.js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
